@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Купить рекламу</title>
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel='stylesheet' href='https://codepen.io/davidchin/pen/VPyEor.css'>
+
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__box">
+                    <a href="index.html" class="header__logo"><img src="../images/Logo.svg" alt="ADVTIME"></a>
+                    
+                    <nav class="header__menu">
+                        <ul class="nav-menu">
+                            <li class="menu-item"><a href="index.html" class="menu-item-link">Главная</a></li>
+                            <li class="menu-item"><a href="Buyadd.html" class="menu-item-link first">Купить рекламу</a></li>
+                            <li class="menu-item"><a href="News.html" class="menu-item-link">Новости</a></li>
+                            <li class="menu-item"><a href="Rules.html" class="menu-item-link">Правила</a></li>
+                            <li class="menu-item"><a href="FAQ.html" class="menu-item-link">F.A.Q</a></li>
+                            <li class="menu-item"><a href="Contact.html" class="menu-item-link">Обратная связь</a></li>
+                        </ul>
+                    </nav>
+                    <div class="menu__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    
+                    <div class="header__wrap-box-1 acc-wrap">
+                        <a class="user-name" href="#">develop_ilya89</a><a href="#"><img src="../images/profile_photo.svg" alt=""></a>
+                        <a class="log-out-btn" href="Login.html">Выйти</a>
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+        </header>
+        <section class="header__section-1">
+            <div class="container">
+                <div class="section__wrap-1">
+                    <div class="section__box">
+                        <h1 class="slogan">Разместите рекламу в <span class="section__extra-w">Advtime</span> уже сегодня!</h1>
+                        <p class="section__desc">Запускайте рекламу в несколько кликов с охватом аудитории до 42 217 534 человек!</p>
+                        <div class="section--btn-box">
+                            <a class="start-btn" href="#">Начать работу</a>
+                            <a class="section--link" href="#">Вебмастерам</a>
+                        </div>
+                    </div>
+                    <img  class="slogan__img" src="../images/Illustration.svg" alt="">
+                </div>              
+            </div>
+        </section>
+        <main >
+            <div class="container">
+                <div class="buyadd">
+                    <div class="buyadd__left">
+                        <div class="buyadd__nav-bar">
+                            <ul class="buyadd__nav-list">
+                                <li class="nav-list__item"><a class="nav-list__link" href="Webmasteradd.html">Купить ссылки</a></li>
+                                <li class="nav-list__item active"><a class="nav-list__link active" href="Webmasterbanners.html">Купить баннеры</a></li>
+                                <li class="nav-list__item"><a class="nav-list__link" href="Webmasterviews.html">Просмотры видео</a></li>
+                            </ul>
+                            
+                        </div>
+                        <p class="buyadd__left-slogan"> В сервисе зарегистировано 4322 активных баннерных места. Воспользуйтесь поиском для подбора наиболее подходящих:</p>
+                        <table class="mobile-table-1" width="615">
+                            <tr>
+                                <td class="table-title">Тематика:</td>
+                                <td>
+                                    <div class="select-title-box">
+                                       <p class="select-title"> Выбрано: <span id="result">0</span></p>
+                                        <hr color="#EBEFF2" class="select-line" />
+                                    </div>
+                                   
+                                    <select class="select-topic" id="list" name="topic" multiple="multiple">
+                                        <option class="topic" value="1">Авто, мото и другой транспорт</option>
+                                        <option class="topic" value="2">Животные и растения</option>
+                                        <option class="topic" value="3">Игры для компьютеров и консолей</option>
+                                        <option class="topic" value="4">Инвестиции, заработок и фермы</option>
+                                        <option class="topic" value="5">Медицина здоровье и фитрес</option>
+                                        <option class="topic" value="6">Мобильные телефоны и гаджеты</option>
+                                        <option class="topic" value="7">Музыка искусство и кино</option>
+                                        <option class="topic" value="8">Авто, мото и другой транспорт</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-title range-title">Посещаемость:</td>
+                                <td rowspan="3">
+                                    <div id="app"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-title range-title-2 range-title">Кликабельность:</td>
+                               
+                            </tr>
+                            <tr>
+                                <td class="table-title range-title-2 range-title">Цена размещения:</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="table-title">Размер баннера:</td>
+                                <td class="extra-row">
+                                    <select class="extra-select"  name="size" id="">
+                                        <option class="select-option" value="480x60">480x60</option>
+                                        <option class="select-option" value="480x60">480x60</option>
+                                        <option class="select-option" value="480x60">480x60</option>
+                                        <option class="select-option" value="480x60">480x60</option>
+                                    </select>
+                                    <p class="table-title extra-table-title">Срок размещения:</p>
+                                    <select class="extra-select" name="time" id="">
+                                        <option class="select-option" value="1week">1 неделя</option>
+                                        <option class="select-option" value="1week">1 неделя</option>
+                                        <option class="select-option" value="1week">1 неделя</option>
+                                        <option class="select-option" value="1week">1 неделя</option>
+                                    </select>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="table-title">Адрес ссылки:</td>
+                                <td><input class="table-url" type="url" placeholder="https://website.ru"></td>
+                            </tr>
+                            <tr>
+                                <td class="table-title">Файл баннера:</td>
+                                <td>
+                                    <div class="field__wrapper">
+ 
+                                        <input name="file" type="file" name="file" id="field__file-2" class="field field__file" multiple>
+                                          
+                                        <label class="field__file-wrapper" for="field__file-2">
+                                          <div class="field__file-fake table-url">https://website.ru/banner.gif</div>
+                                          <div class="field__file-button">Выбрать файлы</div>
+                                        </label>
+                                          
+                                    </div>
+                                    <p class="buyadd__left-slogan extra">(468 x 60 пикселей, не более 300 килобайт)</p>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <div class="buyadd-box-2">
+                            <a class="terms-link" href="#">Условия размещения рекламы</a>
+                            <input class="btn__search" src="../images/search-btn.svg" type="image">
+                        </div>
+
+
+                       
+                        
+                        
+    
+    
+    
+                    </div>
+                    <div class="buyadd__right">
+                        <ul  class="add-list">
+                            <li class="add-item">
+                                <a class="add-item-link" href="Buyadd.html">
+                                    <img src="../images/stars.svg" alt="">
+                                    Рекламодатель
+                                </a>
+                            </li>
+                            <li class="add-item">
+                                <a class="add-item-link active" href="Webmasteradd.html">
+                                    <img src="../images/stars.svg" alt="">
+                                    Вебмастер
+                                </a>
+                            </li>
+                            <li class="add-item">
+                                <a class="add-item-link" href="#">
+                                    <img src="../images/stars.svg" alt="">
+                                    Партнер
+                                </a>
+                            </li>
+                        </ul>
+    
+                        <table class="price-table" width="445" height="484" box-shadow="0px 1px 2px #EBEFF2">
+                            <tr>
+                                <td class="price-table-row-1" colspan="2">Здравствуйте, <strong class="price-table-row-2">Илья Соловьев</strong>!</td>
+                            </tr>
+                            <tr>
+                                <td class="price-table-row">Баланс [ <a class="price-table-link" href="#">Пополнить</a> ]:</td>
+                                <td class="price-table-row">0 руб.</td>
+                            </tr>
+                            <tr>
+                                <td class="price-table-row">Замороженно:</td>
+                                <td class="price-table-row">0 руб.</td>
+                            </tr>
+                            <tr>
+                                <td class="price-table-row">Заработанно всего:</td>
+                                <td class="price-table-row">0 руб.</td>
+                            </tr>
+                            <tr>
+                                <td class="price-table-row">- За сутки:</td>
+                                <td class="price-table-row">0 руб.</td>
+                            </tr>
+                            <tr>
+                                <td class="price-table-row">- За неделю:</td>
+                                <td class="price-table-row">0 руб.</td>
+                            </tr>
+                            <tr>
+                                <td class="price-table-row">-  За месяц:</td>
+                                <td class="price-table-row">0 руб.</td>
+                            </tr>
+                            <tr>
+                                <td class="price-table-row">- На баннерах:</td>
+                                <td class="price-table-row">0 руб.</td>
+                            </tr>
+                            <tr>
+                                <td class="price-table-row">-  На ссылках:</td>
+                                <td class="price-table-row">0 руб.</td>
+                            </tr>
+                            <tr>
+                                <td class="price-table-row">-  На рефералах:</td>
+                                <td class="price-table-row">0 руб.</td>
+                            </tr>
+                            
+                        </table>
+                        <div class="profile-links-box">
+                            <a class="profile-links" href="Webmastermarkets.html"><img src="../images/frame-10.svg" alt="">Площадки</a>
+                            <a class="profile-links" href="Webmasteredit.html"><img src="../images/frame-2.svg" alt="">Профиль</a>
+                            <a class="profile-links" href="#"><img src="../images/frame-3.svg" alt="">Рефералы</a>
+                            <a class="profile-links" href="#"><img src="../images/frame-4.svg" alt="">Платежи</a>
+                        </div>
+                    </div>
+    
+
+                </div>
+
+
+                <div class="section__table-links">
+                    <p class="table-links__title">Результаты поиска:</p>
+                    <table class="table-links__wrap" width="1110" heiht="697">
+                        <tr class="table-links__track">
+                            <td class="table-links__checkbox"> <div class="checkbox">
+                                <input class="real_checkbox" type="checkbox" name="color" id="color">
+                                <div class="fake_checkbox"></div>
+                            </div></td>
+                            <td class="table-links__subjects extra-link-title">Адрес сайта</td>
+                            <td class="table-links__subjects">Посе&shy;ща&shy;емость</td>
+                            <td class="table-links__subjects">Клика&shy;бель&shy;ность</td>
+                            <td class="table-links__subjects">Цена разме&shy;щения</td>
+                            <td></td>
+                        </tr>
+                        <tr class="table-links__track">
+                            <td class="table-links__checkbox"> <div class="checkbox">
+                                <input class="real_checkbox" type="checkbox" name="color" id="color">
+                                <div class="fake_checkbox"></div>
+                            </div></td>
+                            <td class="table-links__box"><a class="table-links__url" target="blank" href="http://super-birds.com/">http://super-birds.com/</a> </td>
+                            <td class="table-links__numbers">256</td>
+                            <td class="table-links__numbers">0.9</td>
+                            <td class="table-links__numbers">150</td>
+                            <td class="table-links__cart"><a href="#"><img src="../images/cart-icon.svg"></a></td>
+                        </tr>
+                        <tr class="table-links__track">
+                            <td class="table-links__checkbox"><div class="checkbox">
+                                <input class="real_checkbox" type="checkbox" name="color" id="color">
+                                <div class="fake_checkbox"></div>
+                            </div></td>
+                            <td class="table-links__box"><a class="table-links__url" target="blank" href="https://cloud-mine.co">https://cloud-mine.co</a></td>
+                            <td class="table-links__numbers">109</td>
+                            <td class="table-links__numbers">0.12</td>
+                            <td class="table-links__numbers">25</td>
+                            <td class="table-links__cart"><a href="#"><img src="../images/cart-icon.svg"></a></td>
+                        </tr>
+                        <tr class="table-links__track">
+                            <td class="table-links__checkbox"><div class="checkbox">
+                                <input class="real_checkbox" type="checkbox" name="color" id="color">
+                                <div class="fake_checkbox"></div>
+                            </div></td>
+                            <td class="table-links__box"><a class="table-links__url" target="blank" href="https://monetacar.org">https://monetacar.org</a></td>
+                            <td class="table-links__numbers">374</td>
+                            <td class="table-links__numbers">0.68</td>
+                            <td class="table-links__numbers">50</td>
+                            <td class="table-links__cart"><a href="#"><img src="../images/cart-icon.svg"></a></td>
+                        </tr>
+                        <tr class="table-links__track">
+                            <td class="table-links__checkbox"><div class="checkbox">
+                                <input class="real_checkbox" type="checkbox" name="color" id="color">
+                                <div class="fake_checkbox"></div>
+                            </div></td>
+                            <td class="table-links__box"><a class="table-links__url" target="blank" href="https://shara.today/">https://shara.today/</a></td>
+                            <td class="table-links__numbers">2572</td>
+                            <td class="table-links__numbers">0.09</td>
+                            <td class="table-links__numbers">150</td>
+                            <td class="table-links__cart"><a href="#"><img src="../images/cart-icon.svg"></a></td>
+                        </tr>
+                        <tr class="table-links__track">
+                            <td class="table-links__checkbox"><div class="checkbox">
+                                <input class="real_checkbox" type="checkbox" name="color" id="color">
+                                <div class="fake_checkbox"></div>
+                            </div></td>
+                            <td class="table-links__box"><a class="table-links__url" target="blank" href="http://lotofreebie.com/">http://lotofreebie.com/</a></td>
+                            <td class="table-links__numbers">729</td>
+                            <td class="table-links__numbers">0.18</td>
+                            <td class="table-links__numbers">39</td>
+                            <td class="table-links__cart"><a href="#"><img src="../images/cart-icon.svg"></a></td>
+                        </tr>
+                        <tr class="table-links__track">
+                            <td class="table-links__checkbox"><div class="checkbox">
+                                <input class="real_checkbox" type="checkbox" name="color" id="color">
+                                <div class="fake_checkbox"></div>
+                            </div></td>
+                            <td class="table-links__box"><a class="table-links__url" target="blank" href="https://tor-corporation.com/">https://tor-corporation.com/</a></td>
+                            <td class="table-links__numbers">1338</td>
+                            <td class="table-links__numbers">0.07</td>
+                            <td class="table-links__numbers">99</td>
+                            <td class="table-links__cart"><a href="#"><img src="../images/cart-icon.svg"></a></td>
+                        </tr>
+                        <tr class="table-links__track">
+                            <td class="table-links__checkbox"><div class="checkbox">
+                                <input class="real_checkbox" type="checkbox" name="color" id="color">
+                                <div class="fake_checkbox"></div>
+                            </div></td>
+                            <td class="table-links__box"><a class="table-links__url" target="blank" href="https://bizoninvest.com/">https://bizoninvest.com/</a></td>
+                            <td class="table-links__numbers">121</td>
+                            <td class="table-links__numbers">0.02</td>
+                            <td class="table-links__numbers">250</td>
+                            <td class="table-links__cart"><a href="#"><img src="../images/cart-icon.svg"></a></td>
+                        </tr>
+                        <tr class="table-links__track">
+                            <td class="table-links__checkbox"><div class="checkbox">
+                                <input class="real_checkbox" type="checkbox" name="color" id="color">
+                                <div class="fake_checkbox"></div>
+                            </div></td>
+                            <td  class="table-links__box"><a class="table-links__url" target="blank" href="http://flower-meadow.ru/">http://flower-meadow.ru/</a></td>
+                            <td class="table-links__numbers">1353</td>
+                            <td class="table-links__numbers">0.01</td>
+                            <td class="table-links__numbers">50</td>
+                            <td class="table-links__cart"><a href="#"><img src="../images/cart-icon.svg"></a></td>
+                        </tr>
+                        <tr class="table-links__track">
+                            <td class="table-links__checkbox"><div class="checkbox">
+                                <input class="real_checkbox" type="checkbox" name="color" id="color">
+                                <div class="fake_checkbox"></div>
+                            </div></td>
+                            <td class="table-links__box"><a class="table-links__url" target="blank" href="http://basic-industries.ru/">http://basic-industries.ru/</a></td>
+                            <td class="table-links__numbers">321</td>
+                            <td class="table-links__numbers">0.05</td>
+                            <td class="table-links__numbers">25</td>
+                            <td class="table-links__cart"><a href="#"><img src="../images/cart-icon.svg"></a></td>
+                        </tr>
+                        <tr class="table-links__track">
+                            <td class="table-links__checkbox"><div class="checkbox">
+                                <input class="real_checkbox" type="checkbox" name="color" id="color">
+                                <div class="fake_checkbox"></div>
+                            </div></td>
+                            <td class="table-links__box"><a class="table-links__url" target="blank" href="https://cosmogame.pro/">https://cosmogame.pro/</a></td>
+                            <td class="table-links__numbers">521</td>
+                            <td class="table-links__numbers">0.19</td>
+                            <td class="table-links__numbers">137</td>
+                            <td class="table-links__cart"> <a  href="#"><img src="../images/cart-icon.svg"></a></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="slide-bar">
+                    <div class="pagination">
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                    </div>
+                </div>
+               
+            </div>
+           
+        </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="footer">
+            <div class="container">
+                <p class="copyright">© Copyright 2020 All rights reserved, <a class="footer__link" href="index.html">Advertise.fit</a></p>
+            </div>
+        </footer> 
+
+
+
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+        <script  src="selected.js"></script>
+        <script  src="range.js"></script>
+
+        <script>
+            let fields = document.querySelectorAll('.field__file');
+            Array.prototype.forEach.call(fields, function (input) {
+              let label = input.nextElementSibling,
+                labelVal = label.querySelector('.field__file-fake').innerText;
+         
+              input.addEventListener('change', function (e) {
+                let countFiles = '';
+                if (this.files && this.files.length >= 1)
+                  countFiles = this.files.length;
+         
+                if (countFiles)
+                  label.querySelector('.field__file-fake').innerText = 'Выбрано файлов: ' + countFiles;
+                else
+                  label.querySelector('.field__file-fake').innerText = labelVal;
+              });
+            });
+        </script>
+        <script src="menu.js"></script>
+        <script src='https://codepen.io/davidchin/pen/VPyEor.js'></script>
+        <script src="script.js"></script>
+
+        
+        
+        
+        
+    </body>
+</html>

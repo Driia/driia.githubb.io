@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Авторизация</title>
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/style.css">  
+        <link rel="stylesheet" href="../styles/material-icons.min.css"> 
+
+    </head>
+    <body>
+        <main class="main__login">
+            <div class="container">
+                <div class="login__wrap">
+                    <a href="index.html" class="header__logo"><img src="../images/Logo.svg" alt="ADVTIME"></a>
+                    <hr color="#EBEFF2" class="login__line">
+                    <form class="login__form" action="">
+                        <input class="login__log-in" name="user_name" placeholder="Логин" type="text">
+                        <div class="input-group">
+                            <div class="input-container">
+                                <input id="password" type="password" placeholder="Пароль" maxlength="30" class="form-control login__passw" />
+                                <i class="material-icons visibility">visibility_off</i>
+                              </div>
+                        </div>
+                        <div class="login__wrap-2">
+                            <hr class="line-1" color="#EBEFF2">
+                            <p class="login__extra-w">или</p>
+                            <hr class="line-2" color="#EBEFF2">
+                        </div>
+                        <a href="#" class="login__google">Авторизироваться через Google</a>
+                        <div class="login__wrap-3">
+                            <div class="checkbox">
+                                <input class="real_checkbox" type="checkbox" name="agree" id="remember">
+                                <div class="fake_checkbox"></div>
+                            </div>
+                            <label class="checkbox-desc" for="remember">Запомнить меня</label>
+                            <a class="link-log" href="#">Забыли пароль?</a>
+                            <input class="btn-log-2" src="../images/login-btn-2.svg" alt="Войти" type="image">
+                        </div>
+                        
+
+                    </form>
+
+                </div>
+            </div>
+        </main>
+
+
+
+        <script  src="function.js"></script>
+
+        
+    </body>
+</html>
